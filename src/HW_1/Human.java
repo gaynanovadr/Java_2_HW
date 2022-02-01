@@ -1,8 +1,8 @@
 package HW_1;
 
-public class Robot implements Moveable{
-    private final int maxRun = 10;
-    private final int maxJump = 5;
+public class Human implements Moveable{
+    private final int maxRun = 5;
+    private final int maxJump = 1;
     private boolean check = true;
 
     public boolean isCheck() {
@@ -12,18 +12,18 @@ public class Robot implements Moveable{
     @Override
     public void jump(int height) {
         if (maxJump >= height && check) {
-            System.out.println("Robot can jump");
+            System.out.println("Human can jump");
         } else {
-            System.out.println("Robot cant jump");
+            System.out.println("Human cant jump");
             check = false;
         }
     }
     @Override
     public void run(int length) {
         if (maxRun >= length && check) {
-            System.out.println("Robot can run");
+            System.out.println("Human can run");
         } else {
-            System.out.println("Robot cant run");
+            System.out.println("Human cant run");
             check = false;
         }
     }
